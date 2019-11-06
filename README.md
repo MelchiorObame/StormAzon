@@ -1,5 +1,5 @@
 # StormLand_Project
-**StormLand**
+**StormAzon**
 Application .NET pour la gestion d'articles.
 
 ![htr](./doc/kiosk.png)
