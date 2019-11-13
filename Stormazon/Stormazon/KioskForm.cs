@@ -192,6 +192,7 @@ namespace Stormazon
         {
             this.removeItem();
             this.updateLabels();
+            this.itemPictureBox.Image = global::Stormazon.Properties.Resources.transp;
         }
 
         //à l'appui sur le shippingCheckBox. Change shinpping cost and update Total price
