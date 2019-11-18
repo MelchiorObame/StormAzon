@@ -17,16 +17,18 @@ namespace Stormazon
         public MusicForm()
         {
             InitializeComponent();
-            listItemsSelected= new List<string>();
+            listItemsSelected = new List<string>();
         }
 
         //change item name by checking checkBox
-        private void addSelItemNameToList() {
+        private void addSelItemNameToList()
+        {
             if (music11checkBox.Checked)
             {
                 listItemsSelected.Add("Guns N Roses");
             }
-            if(music12checkBox.Checked) {
+            if (music12checkBox.Checked)
+            {
                 listItemsSelected.Add("Bon Jovi");
             }
             if (music21checkBox.Checked)
@@ -47,7 +49,8 @@ namespace Stormazon
         private void addSelBtn_Click(object sender, EventArgs e)
         {
             this.addSelItemNameToList();
-            foreach (string itemName in listItemsSelected){
+            foreach (string itemName in listItemsSelected)
+            {
                 ((KioskForm)this.Owner).addItem(itemName);
             }
             //Clear all item

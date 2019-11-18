@@ -37,7 +37,7 @@ namespace Stormazon
             intItemCount = 0;
             dblsubTotal = 0;
         }
-       
+
         //#############     fonctions
         // Void method to handle shipping
         public void checkShippingBox()
@@ -65,9 +65,9 @@ namespace Stormazon
             double price = 0.0;
             switch (itemName)
             {
-                case "Back to the Future":  price = 29.99;
+                case "Back to the Future": price = 29.99;
                     break;
-                case "Can’t Buy Me Love":  price = 24.99;
+                case "Can’t Buy Me Love": price = 24.99;
                     break;
                 case "Raiders of the Lost Ark": price = 22.99;
                     break;
@@ -98,7 +98,8 @@ namespace Stormazon
         //method to remove an item from the listbox
         public void removeItem()
         {
-            if (this.itemsListBox.SelectedItem !=null) {
+            if (this.itemsListBox.SelectedItem != null)
+            {
                 double price = getItemPrice(itemsListBox.SelectedItem.ToString());
                 dblsubTotal -= price;
                 dblTax -= DBL_TAXRATE * price;
@@ -114,14 +115,15 @@ namespace Stormazon
         {
             this.intItemCount++;
             dblsubTotal += itemPrice;
-            dblTax += DBL_TAXRATE*itemPrice;
+            dblTax += DBL_TAXRATE * itemPrice;
             dblTotal = dblsubTotal + dblTax;
         }
 
         //Void method to update the form labels
-        public void updateLabels() {
+        public void updateLabels()
+        {
             //arrondie à 2 chiffre apres la virgule.
-            dblTotal = Math.Round(dblTotal,2);
+            dblTotal = Math.Round(dblTotal, 2);
             dblTax = Math.Round(dblTax, 2);
             dblsubTotal = Math.Round(dblsubTotal, 2);
             this.itemCountLabel.Text = intItemCount.ToString();
@@ -131,7 +133,8 @@ namespace Stormazon
         }
 
         //Void method to add an item to the form
-        public void addItem(string itemName) {
+        public void addItem(string itemName)
+        {
             this.itemPictureBox.Visible = true;
             double itemPrice = this.getItemPrice(itemName);   //get the item price
             this.itemsListBox.Items.Add(itemName);            //add the item to the listbox
@@ -142,7 +145,7 @@ namespace Stormazon
 
         //change l'image lorsqu'on click dans la listBox
         public void changeItemPicture()
-        {      
+        {
             string itemName = this.itemsListBox.SelectedItem.ToString();
             switch (itemName)
             {
@@ -185,7 +188,7 @@ namespace Stormazon
                     break;
             }
         }
-        
+
         //########## Buttons
         //retire l'item selectionné si il y'en a un.
         private void removeSelBtn_Click(object sender, EventArgs e)
@@ -200,7 +203,8 @@ namespace Stormazon
         {
 
             checkShippingBox();
-            if ( !this.shippingcheckBox.Checked) {
+            if (!this.shippingcheckBox.Checked)
+            {
                 double shippingCost = 0.0;
                 shippingLabel.Text = shippingCost.ToString();
                 if (intItemCount > 0 && intItemCount < 4)

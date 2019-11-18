@@ -1,0 +1,11 @@
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\bin\Debug\Stormazon.exe
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\bin\Debug\Stormazon.pdb
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.KioskForm.resources
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.Properties.Resources.resources
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.csproj.GenerateResource.Cache
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.exe
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.pdb
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.AboutForm.resources
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.MovieForm.resources
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.MusicForm.resources
+C:\Users\hp\AppData\Local\Temporary Projects\Stormazon\obj\x86\Debug\Stormazon.VideoGamesForm.resources

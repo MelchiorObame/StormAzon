@@ -22,11 +22,11 @@ namespace Stormazon
         {
             InitializeComponent();
             listItemsSelected = new List<string>();
-            movie11Selected=false;
-            movie12Selected=false;
-            movie21Selected=false;
-            movie22Selected=false;
-    }
+            movie11Selected = false;
+            movie12Selected = false;
+            movie21Selected = false;
+            movie22Selected = false;
+        }
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
@@ -58,19 +58,19 @@ namespace Stormazon
             movie11Selected = !movie11Selected;
             if (movie11Selected)
             {
-                check11PicBox.Visible=true;
+                check11PicBox.Visible = true;
                 listItemsSelected.Add("Back to the Future");
             }
             else
             {
                 check11PicBox.Visible = false;
                 listItemsSelected.Remove("Back to the Future");
-            }     
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            movie12Selected = !movie12Selected;  
+            movie12Selected = !movie12Selected;
             if (movie12Selected)
             {
                 check12PicBox.Visible = true;
